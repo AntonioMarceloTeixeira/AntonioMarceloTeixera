@@ -46,7 +46,10 @@ public abstract class Personagem {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if(nome!=null && nome.trim().isEmpty()) {
+            this.nome = nome;
+        }
+        throw new IllegalArgumentException("Nome invalido");
     }
 
     public double getPoderBase() {
@@ -64,8 +67,6 @@ public abstract class Personagem {
     public void setPontosDeVida(int pontosDeVida) {
         this.pontosDeVida = pontosDeVida;
     }
-
-
 
     public abstract void usarHabilidade();
 

@@ -12,7 +12,7 @@ public class Guerreiro extends Personagem{
 
     @Override
     public void usarHabilidade() {
-        System.out.printf( "Guerreiro %s conjura %.0f bola de fogo!", super.getNome(), super.getPoderBase() );
+        System.out.printf( "Guerreiro %s usa espada %.0f vezes !", super.getNome(), super.getPoderBase() );
 
     }
 

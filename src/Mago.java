@@ -12,7 +12,7 @@ public class Mago extends Personagem{
 
     @Override
     public void usarHabilidade() {
-        System.out.printf( "Mago %s conjura %.0f bola de fogo!", super.getNome(), super.getPoderBase() );
+        System.out.printf( "Mago %s usa cajado magico %.0f vezes quando ameaçado de morte!", super.getNome(), super.getPoderBase() );
 
     }
 

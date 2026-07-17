@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Personagem> personagem = new ArrayList<>();
-        Personagem magoMerlin =  new Mago("Merlin", "Bruxo", 10, 100,90,"Desaparecer");
-        Personagem magoCesar = new Mago("Cesar", "Feiticeiro", 80,120,60, "Virar uma bola de fogo");
+        Personagem magoMerlin =  new Mago("Merlin", "Bruxo", 10, 4,90,"Desaparecer");
+        Personagem magoCesar = new Mago("Cesar", "Feiticeiro", 80,1,60, "Virar uma bola de fogo");
 
         Personagem guerreiroBrutos = new Guerreiro("Brutos", "Assassino", 200, 10, 200, "Usar facas");
         Personagem guerreioCaio = new Guerreiro("Caio", "Gladiador", 300, 99, 400, "Matar com as mãos");
