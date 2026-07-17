@@ -3,6 +3,19 @@ public abstract class Personagem {
     private String nome;
     private String classe;
     private int nivel;
+    private int pontosDeVida;
+    private double poderBase;
+    private String habilidade;
+
+    public Personagem( String nome, String classe, int nivel, double poderBase, int pontosDeVida, String habilidade) {
+        this.nome = nome;
+        this.classe = classe;
+        this.nivel = nivel;
+        this.poderBase = poderBase;
+        this.pontosDeVida = pontosDeVida;
+        this.habilidade=habilidade;
+
+    }
 
     public String getClasse() {
         return classe;
@@ -52,19 +65,7 @@ public abstract class Personagem {
         this.pontosDeVida = pontosDeVida;
     }
 
-    private int pontosDeVida;
-    private double poderBase;
-    private String habilidade;
 
-    public Personagem( String nome, String classe, int nivel, double poderBase, int pontosDeVida, String habilidade) {
-        this.nome = nome;
-        this.classe = classe;
-        this.nivel = nivel;
-        this.poderBase = poderBase;
-        this.pontosDeVida = pontosDeVida;
-        this.habilidade=habilidade;
-
-    }
 
     public abstract void usarHabilidade();
 
