@@ -22,7 +22,10 @@ public abstract class Personagem {
     }
 
     public void setClasse(String classe) {
-        this.classe = classe;
+        if(classe!=null && classe.trim().isEmpty()) {
+            this.classe = classe;
+        }
+        throw new IllegalArgumentException("Nome invalido");
     }
 
     public String getHabilidade() {
