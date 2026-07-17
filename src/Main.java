@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Personagem> personagem = new ArrayList<>();
-        Mago magoMerlin =  new Mago("Merlin", "Bruxo", 10, 100,90,"Desaparecer");
-        Mago magoCesar = new Mago("Cesar", "Feiticeiro", 80,120,60, "Virar uma bola de fogo");
+        Personagem magoMerlin =  new Mago("Merlin", "Bruxo", 10, 100,90,"Desaparecer");
+        Personagem magoCesar = new Mago("Cesar", "Feiticeiro", 80,120,60, "Virar uma bola de fogo");
 
-        Guerreiro guerreiroBrutos = new Guerreiro("Brutos", "Assassino", 200, 10, 200, "Usar facas");
-        Guerreiro guerreioCaio = new Guerreiro("Caio", "Gladiador", 300, 99, 400, "Matar com as mãos");
+        Personagem guerreiroBrutos = new Guerreiro("Brutos", "Assassino", 200, 10, 200, "Usar facas");
+        Personagem guerreioCaio = new Guerreiro("Caio", "Gladiador", 300, 99, 400, "Matar com as mãos");
 
         personagem.add(magoMerlin);
         personagem.add(magoCesar);
