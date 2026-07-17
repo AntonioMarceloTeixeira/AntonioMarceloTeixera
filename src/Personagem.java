@@ -78,12 +78,26 @@ public abstract class Personagem {
     @Override
     public String toString() {
         return "Personagem{" +
-                "classe='"  + classe + '\''+
+                "  classe='"  + classe + '\''+
                 ", nome='" + nome + '\'' +
                 ", nivel=" + nivel +
                 ", pontosDeVida=" + pontosDeVida +
                 ", poderBase=" + poderBase +
                 ", habilidade='" + habilidade + '\'' +
                 '}';
+    }
+
+    @Override
+    public final boolean equals(Object o) {
+        if (!(o instanceof Personagem that)) return false;
+
+        return getNome().equals(that.getNome()) && getClasse().equals(that.getClasse());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getNome().hashCode();
+        result = 31 * result + getClasse().hashCode();
+        return result;
     }
 }

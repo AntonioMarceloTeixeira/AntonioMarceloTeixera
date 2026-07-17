@@ -22,4 +22,10 @@ public class Mago extends Personagem{
                 super.toString()+
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
 }

@@ -21,11 +21,6 @@ public class Main {
             personagem1.exibirStatus();
             personagem1.usarHabilidade();
             System.out.printf("%n===============================================================%n");
-
         }
-
-
-
-
     }
 }

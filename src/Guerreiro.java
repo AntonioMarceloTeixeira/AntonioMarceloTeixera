@@ -19,7 +19,12 @@ public class Guerreiro extends Personagem{
     @Override
     public String toString() {
         return "Guerreiro{" +
-                super.toString()+
+                super.toString() +
                 '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
