@@ -1,4 +1,5 @@
-public  class Mago extends Personagem {
+public class Mago extends Personagem{
+
 
     public Mago(String nome, String classe, int nivel, double poderBase, int pontosDeVida, String habilidade) {
         super(nome, classe, nivel, poderBase, pontosDeVida, habilidade);
@@ -11,13 +12,14 @@ public  class Mago extends Personagem {
 
     @Override
     public void usarHabilidade() {
-        System.out.printf( "Mago %s conjura %.0f flecha de veneno!", nome, poderBase);
+        System.out.printf( "Mago %s conjura %.0f bola de fogo!", super.getNome(), super.getPoderBase() );
+
     }
 
     @Override
     public String toString() {
         return "Mago{" +
-               super.toString()+
+                super.toString()+
                 '}';
     }
 }

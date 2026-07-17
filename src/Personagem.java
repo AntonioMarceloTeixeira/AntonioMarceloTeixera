@@ -1,11 +1,60 @@
 public abstract class Personagem {
 
-    protected String nome;
-    protected String classe;
-    protected int nivel;
-    protected int pontosDeVida;
-    protected double poderBase;
-    protected String habilidade;
+    private String nome;
+    private String classe;
+    private int nivel;
+
+    public String getClasse() {
+        return classe;
+    }
+
+    public void setClasse(String classe) {
+        this.classe = classe;
+    }
+
+    public String getHabilidade() {
+        return habilidade;
+    }
+
+    public void setHabilidade(String habilidade) {
+        this.habilidade = habilidade;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPoderBase() {
+        return poderBase;
+    }
+
+    public void setPoderBase(double poderBase) {
+        this.poderBase = poderBase;
+    }
+
+    public int getPontosDeVida() {
+        return pontosDeVida;
+    }
+
+    public void setPontosDeVida(int pontosDeVida) {
+        this.pontosDeVida = pontosDeVida;
+    }
+
+    private int pontosDeVida;
+    private double poderBase;
+    private String habilidade;
 
     public Personagem( String nome, String classe, int nivel, double poderBase, int pontosDeVida, String habilidade) {
         this.nome = nome;
